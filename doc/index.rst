@@ -10,6 +10,13 @@ Welcome to Math 1432 Notes's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   Welcome
+
+.. toctree::
+   :caption: Chapter 1:
+
+   chapter1/11.md
+
 
 
 Indices and tables
