@@ -16,6 +16,8 @@ Welcome to Math 1432 Notes's documentation!
    :caption: Chapter 1:
 
    chapter1/11.md
+   chapter1/12.md
+   chapter1/13.md
 
 
 
