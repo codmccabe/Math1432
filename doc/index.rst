@@ -14,6 +14,7 @@ Welcome to Math 1432 Notes's documentation!
 
 .. toctree::
    :caption: Chapter 1:
+   :hidden: true
 
    chapter1/11.md
    chapter1/12.md
