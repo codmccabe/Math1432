@@ -20,7 +20,10 @@ Welcome to Math 1432 Notes's documentation!
    chapter1/13.md
    chapter1/14.md
 
+.. toctree::
+   :caption: Chapter 2:
 
+   chapter2/21.md
 
 Indices and tables
 ==================
