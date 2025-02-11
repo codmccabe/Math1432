@@ -25,6 +25,7 @@ Welcome to Math 1432 Notes's documentation!
 
    chapter2/21.md
    chapter2/22.md
+   chapter2/24.md
 
 Indices and tables
 ==================
