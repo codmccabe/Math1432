@@ -28,6 +28,12 @@ Welcome to Math 1432 Notes's documentation!
    chapter2/24.md
    chapter2/25.md
 
+.. toctree::
+   :caption: Chapter 3:
+
+   chapter3/31.md
+   chapter3/32.md
+
 Indices and tables
 ==================
 
