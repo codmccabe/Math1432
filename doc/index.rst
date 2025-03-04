@@ -33,6 +33,8 @@ Welcome to Math 1432 Notes's documentation!
 
    chapter3/31.md
    chapter3/32.md
+   chapter3/33.md
+   chapter3/34.md
 
 Indices and tables
 ==================
