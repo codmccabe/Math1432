@@ -36,6 +36,11 @@ Welcome to Math 1432 Notes's documentation!
    chapter3/33.md
    chapter3/34.md
 
+.. toctree::
+   :caption: Chapter 4:
+
+   chapter4/41.md
+
 Indices and tables
 ==================
 
