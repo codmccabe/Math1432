@@ -1,0 +1,130 @@
+# Section 3.2
+
+:::{prf:definition} Arc Length
+:label: arcDef
+
+The length $s$ of the arc intercepted on a circle of radius $r$
+by a central angle of measure $\theta$ radians is given by the product
+of the radius and the radians measure of the angle
+
+$$
+s=r\theta
+$$
+
+where $\theta$ **must** be in units of radians.
+:::
+
+:::{prf:definition} Sector Area
+:label: sectorArea
+
+The area $A$ of a sector of a circle of radius $r$ and central angle $\theta$ is given by
+
+$$
+A=\frac{1}{2}r^{2}\theta
+$$
+
+where $\theta$ is in radians.
+:::
+
+::::{prf:example}
+:label: arcLengthExam
+
+Find the arc length for the following situations (leave your answers in terms of $\pi$):
+
+Circle has a radius of $5$ meters and $\theta=\dfrac{3\pi}{2}$.
+
+:::{dropdown} Solution:
+
+\begin{align*}
+s & =r\theta\\
+ & =5\cdot\frac{3\pi}{2}\\
+ & =\dfrac{15\pi}{2}
+\end{align*}
+
+:::
+
+Circle has a radius of $8.5$ meters and $\theta=210^{\circ}$.
+
+:::{dropdown} Solution:
+
+First, we will write $\theta$ in radians
+
+$$
+210\cdot\frac{\pi}{180}=\frac{7\,\pi}{6}=\theta
+$$
+
+Finally, we will calculate the arc length
+
+\begin{align*}
+s & =r\theta\\
+ & =8.5\cdot\dfrac{7\pi}{6}\\
+ & =\dfrac{17}{2}\cdot\dfrac{7\pi}{6}\\
+ & =\frac{119\pi}{12}
+\end{align*}
+
+:::
+
+Let Gear 1 connect to Gear 2 where if Gear 1 turns, then Gear 2 turns with it. If Gear 1 has a radius of 2 meters and rotates $45^{\circ}$ and Gear 2 has a radius of $3$ meters, then find how many degrees does Gear 2 rotate.
+
+:::{dropdown} Solution:
+
+First, we will find $45^{\circ}$ in radians
+
+$$
+45\cdot\frac{\pi}{180}=\frac{\pi}{4}=\theta_{\text{Gear 1}}
+$$
+
+The arc length for gear 1 is
+
+\begin{align*}
+s_{\text{Gear 1}} & =r_{\text{Gear 1}}\cdot\theta_{\text{Gear 1}}\\
+ & =2\cdot\dfrac{\pi}{4}\\
+ & =\dfrac{\pi}{2}
+\end{align*}
+
+Since gear 1 and gear 2 travel the same arc length we know $s_{\text{Gear 2}}=\frac{\pi}{2}$. Furthermore, since $r_{\text{Gear 2}}=3$ we know
+
+\begin{align*}
+s_{\text{Gear 2}} & =r_{\text{Gear 2}}\cdot\theta_{\text{Gear 2}}\\
+\frac{\pi}{2} & =3\theta_{\text{Gear 2}}\\
+\theta_{\text{Gear 2}} & =\dfrac{\pi}{6}=30^{\circ}
+\end{align*}
+
+Thus, gear 2 rotates $30^{\circ}$ as gear 1 rotates $45^{\circ}$.
+:::
+
+::::
+
+::::{prf:example}
+:label: secAreaExam
+
+Find the sector area for the following situation (leave your answers in terms of $\pi$):
+
+A pizza is sliced into 9 pieces equal slices. If you order a 16 inch pizza, then what is the area of one slice of the pizza?
+
+:::{dropdown} Solution:
+
+A circle is made up of $360^{\circ}$ and if the circle is partitioned
+into 9 equal pieces than $360^{\circ}$ is divided into 9 equal pieces:
+
+$$
+\frac{360}{9}=40.
+$$
+
+Next, we want to find $40^{\circ}$ in units of radians
+
+$$
+40\cdot\frac{\pi}{180}=\frac{2\,\pi}{9}
+$$
+
+The measure of ``16 inch pizza'' is stating the diameter of the circle is 16 inches; therefore, the radius of the this pizza is $\frac{16}{2}=8$.
+
+The area of a sector is $A=\frac{1}{2}r^{2}\theta$, where in this case $\theta=\frac{2\pi}{9}$ and $r=8$. Therefore,
+
+\begin{align*}
+A & =\frac{1}{2}(8)^{2}\cdot\frac{2\pi}{9}\\
+ & =\frac{64\pi}{9}
+\end{align*}
+
+:::
+::::
