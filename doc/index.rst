@@ -40,6 +40,7 @@ Welcome to Math 1432 Notes's documentation!
    :caption: Chapter 4:
 
    chapter4/41.md
+   chapter4/42.md
 
 Indices and tables
 ==================
