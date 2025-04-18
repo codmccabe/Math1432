@@ -1,0 +1,514 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section 4.1 &mdash; Math 1432 Notes 2025 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=cb975c41"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Section 4.2" href="42.html" />
+    <link rel="prev" title="Section 3.4" href="../chapter3/34.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Math 1432 Notes
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/11.html">Section 1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/12.html">Section 1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/13.html">Section 1.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/14.html">Section 1.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/21.html">Section 2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/22.html">Section 2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/24.html">Section 2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/25.html">Section 2.5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/31.html">Section 3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/32.html">Section 3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/33.html">Section 3.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/34.html">Section 3.4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 4:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Section 4.1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#graph-of-the-sine-function">Graph of the Sine Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grpah-of-the-cosine-function">Grpah of the Cosine Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#graph-of-y-a-cos-x-and-y-a-sin-x">Graph of <span class="math notranslate nohighlight">\(y=A\cos(x)\)</span> and <span class="math notranslate nohighlight">\(y=A\sin(x)\)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#graph-of-y-cos-bx-and-y-sin-bx">Graph of <span class="math notranslate nohighlight">\(y=\cos(Bx)\)</span> and <span class="math notranslate nohighlight">\(y=\sin(Bx)\)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#graph-of-y-cos-x-and-y-sin-x-with-reflections">Graph of <span class="math notranslate nohighlight">\(y=\cos(x)\)</span> and <span class="math notranslate nohighlight">\(y=\sin(x)\)</span> with Reflections</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="42.html">Section 4.2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Chapter 5:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter5/51.html">Section 5.1</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Math 1432 Notes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section 4.1</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/chapter4/41.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="section-4-1">
+<h1>Section 4.1<a class="headerlink" href="#section-4-1" title="Link to this heading"></a></h1>
+<div class="proof definition admonition" id="periodDef">
+<p class="admonition-title"><span class="caption-number">Definition 13 </span></p>
+<section class="definition-content" id="proof-content">
+<p>A periodic function is a function <span class="math notranslate nohighlight">\(f\)</span> such that</p>
+<div class="math notranslate nohighlight">
+\[
+f(x)=f(x+np),
+\]</div>
+<p>for every real number <span class="math notranslate nohighlight">\(x\)</span> in the domain of <span class="math notranslate nohighlight">\(f\)</span>, every integer <span class="math notranslate nohighlight">\(n\)</span>, and some positive real number <span class="math notranslate nohighlight">\(p\)</span>. The least possible positive value of <span class="math notranslate nohighlight">\(p\)</span> is the period of the function.</p>
+</section>
+</div><p>The sine and cosine function are periodic functions with period <span class="math notranslate nohighlight">\(2\pi\)</span>. That is,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\cos(x) &amp; =\cos(x+2\pi n)\\
+\sin(x) &amp; =\sin(x+2\pi n)
+\end{align*}\]</div>
+<p>for any integer <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<section id="graph-of-the-sine-function">
+<h2>Graph of the Sine Function<a class="headerlink" href="#graph-of-the-sine-function" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>The domain of the sine function is the set of all real numbers.</p></li>
+<li><p>The range of the sine function is the interval <span class="math notranslate nohighlight">\([-1,1]\)</span>. This means for all real number <span class="math notranslate nohighlight">\(x\)</span>, we have, <span class="math notranslate nohighlight">\(-1\le \sin(x)\le 1\)</span>.</p></li>
+</ul>
+<p>Some key values when plotting the sine function:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(x\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\sin(x)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{\pi}{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\pi\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{3\pi}{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(2\pi\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="'The graph of y=sin(x).'" src="../_images/sinxGraph.png" /></p>
+<ul class="simple">
+<li><p>The sine function is continuous everywhere.</p></li>
+<li><p>The length of one period for the sine function is <span class="math notranslate nohighlight">\(2\pi\)</span>.</p></li>
+<li><p>The graph of the sine function is symmetric about the origin.</p>
+<ul>
+<li><p>This mean the sine function is odd.</p></li>
+<li><p>That is, <span class="math notranslate nohighlight">\(\sin(-x)=-\sin(x)\)</span>.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="grpah-of-the-cosine-function">
+<h2>Grpah of the Cosine Function<a class="headerlink" href="#grpah-of-the-cosine-function" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>The domain of the cosine function is the set of real numbers.</p></li>
+<li><p>The range of the cosine function is the interval <span class="math notranslate nohighlight">\([-1,1]\)</span>. That is, for all <span class="math notranslate nohighlight">\(x\)</span> in the real numbers, we have, <span class="math notranslate nohighlight">\(-1\le \cos(x)\le 1\)</span>.</p></li>
+</ul>
+<p>Some key values when plotting the cosine function:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(x\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\cos(x)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{\pi}{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\pi\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{3\pi}{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(2\pi\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="'Graph of y=cos(x)'" src="../_images/cosxGraph.png" /></p>
+<ul class="simple">
+<li><p>The cosine function is continuous everywhere.</p></li>
+<li><p>The length of one period for the cosine function is <span class="math notranslate nohighlight">\(2\pi\)</span>.</p></li>
+<li><p>The graph of the cosine function is symmetric about the <span class="math notranslate nohighlight">\(y\)</span>-axis.</p>
+<ul>
+<li><p>This mean the sine function is even.</p></li>
+<li><p>That is, <span class="math notranslate nohighlight">\(\cos(-x)=\cos(x)\)</span>.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="graph-of-y-a-cos-x-and-y-a-sin-x">
+<h2>Graph of <span class="math notranslate nohighlight">\(y=A\cos(x)\)</span> and <span class="math notranslate nohighlight">\(y=A\sin(x)\)</span><a class="headerlink" href="#graph-of-y-a-cos-x-and-y-a-sin-x" title="Link to this heading"></a></h2>
+<div class="proof definition admonition" id="ampDef">
+<p class="admonition-title"><span class="caption-number">Definition 14 </span> (Amplitude)</p>
+<section class="definition-content" id="proof-content">
+<p>The graph of <span class="math notranslate nohighlight">\(y=A\sin(x)\)</span> or <span class="math notranslate nohighlight">\(y=A\cos(x)\)</span>, with <span class="math notranslate nohighlight">\(a\ne0\)</span>, will have the same shape as the graph of <span class="math notranslate nohighlight">\(y=\sin(x)\)</span> or <span class="math notranslate nohighlight">\(y=\cos(x),\)</span>respectively, except with the range of <span class="math notranslate nohighlight">\(-|A|\le y\le|A|\)</span>.</p>
+<p>The <strong>amplitude</strong> is <span class="math notranslate nohighlight">\(|A|\)</span>.</p>
+</section>
+</div><div class="proof example admonition" id="AcosxExam">
+<p class="admonition-title"><span class="caption-number">Example 24 </span></p>
+<section class="example-content" id="proof-content">
+<p>Plot the graph of <span class="math notranslate nohighlight">\(y=2\cos(x)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The amplitude of the graph is <span class="math notranslate nohighlight">\(|2|=2\)</span>.</p>
+<p class="sd-card-text">Let <span class="math notranslate nohighlight">\(x=\{0,\frac{\pi}{2},\pi,\frac{3\pi}{2},2\pi \}\)</span>. Then consider the following table of values:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p class="sd-card-text">x</p></th>
+<th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(y=\cos(x)\)</span></p></th>
+<th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(y=2\cos(x)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{\pi}{2}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\pi\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(-2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{3\pi}{2}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(2\pi\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(2\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p class="sd-card-text">From the table we see that we want to plot the following points:</p>
+<div class="math notranslate nohighlight">
+\[(0,2),(\frac{\pi}{2},0),(\pi,-2),(\frac{3\pi}{2},0),(2\pi,2)\]</div>
+<p class="sd-card-text"><img alt="'Graph of y=cos(x) and the points plotted'" src="../_images/twocosxGraph.png" /></p>
+<p class="sd-card-text">Next, we connect the dots following the behavior of the curves from the graph of <span class="math notranslate nohighlight">\(y=\cos(x)\)</span> (as shown in gray).</p>
+<p class="sd-card-text"><img alt="'Graph of y=cos(x) and one period of y=2cos(x).'" src="../_images/twocosxGraphoneperiod.png" /></p>
+<p class="sd-card-text">Above is the graph of <span class="math notranslate nohighlight">\(y=2\cos(x)\)</span> over one period. To represent the graph of <span class="math notranslate nohighlight">\(y=2\cos(x)\)</span> over its domain we have.</p>
+<p class="sd-card-text"><img alt="'The graph of y=cos(x) and y=2cos(x)'" src="../_images/fulltwocosxgraph.png" /></p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="AsinxExam">
+<p class="admonition-title"><span class="caption-number">Example 25 </span></p>
+<section class="example-content" id="proof-content">
+<p>Plot <span class="math notranslate nohighlight">\(y=\frac{1}{2}\sin(x)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The amplitude of the graph is <span class="math notranslate nohighlight">\(|\frac12|=\frac12\)</span>.</p>
+<p class="sd-card-text">Let <span class="math notranslate nohighlight">\(x=\{0,\frac{\pi}{2},\pi,\frac{3\pi}{2},2\pi \}\)</span>. Then consider the following table of values:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x\)</span></p></th>
+<th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\sin(x)\)</span></p></th>
+<th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac12 \sin(x)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{\pi}{2}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac12\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\pi\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{3\pi}{2}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(-\frac12\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(2\pi\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p class="sd-card-text">From the table we see that we want to plot the following points:</p>
+<div class="math notranslate nohighlight">
+\[(0,0),(\frac{\pi}{2},\frac12),(\pi,0),(\frac{3\pi}{2},-\frac12),(2\pi,0)\]</div>
+<p class="sd-card-text"><img alt="'Graph of y=sin(x) and the points plotted'" src="../_images/halfsinxGraphpointwise.png" /></p>
+<p class="sd-card-text">Next, we connect the dots following the behavior of the curves from the graph of <span class="math notranslate nohighlight">\(y=\sin(x)\)</span> (as shown in gray).</p>
+<p class="sd-card-text"><img alt="'Graph of y=sin(x) and one period of y=0.5sin(x)'" src="../_images/halfsinxGraphoneperiod.png" /></p>
+<p class="sd-card-text">Above is the graph of <span class="math notranslate nohighlight">\(y=\frac12 \sin(x)\)</span> over one period. To represent the graph of <span class="math notranslate nohighlight">\(y=\frac12 \sin(x)\)</span> over its domain we have.</p>
+<p class="sd-card-text"><img alt="'Graph of y=sin(x) and y=0.5sin(x)'" src="../_images/halfsinxGraphall.png" /></p>
+</div>
+</details></section>
+</div></section>
+<section id="graph-of-y-cos-bx-and-y-sin-bx">
+<h2>Graph of <span class="math notranslate nohighlight">\(y=\cos(Bx)\)</span> and <span class="math notranslate nohighlight">\(y=\sin(Bx)\)</span><a class="headerlink" href="#graph-of-y-cos-bx-and-y-sin-bx" title="Link to this heading"></a></h2>
+<p>For <span class="math notranslate nohighlight">\(b&gt;0\)</span>, the graph of <span class="math notranslate nohighlight">\(y=\sin(Bx)\)</span> will resemble that of <span class="math notranslate nohighlight">\(y=\sin(x)\)</span>, but with period <span class="math notranslate nohighlight">\(\frac{2\pi}{b}\)</span>. Also, the graph of <span class="math notranslate nohighlight">\(y=\cos(Bx)\)</span> will resemble that of <span class="math notranslate nohighlight">\(y=\cos(x)\)</span>, but with period <span class="math notranslate nohighlight">\(\frac{2\pi}{B}\)</span>.</p>
+<div class="proof example admonition" id="sinthreefourthsxExam">
+<p class="admonition-title"><span class="caption-number">Example 27 </span></p>
+<section class="example-content" id="proof-content">
+<p>Plot <span class="math notranslate nohighlight">\(y=\sin(\frac34 x)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we see that the amplitude is <span class="math notranslate nohighlight">\(1\)</span>.</p>
+<p class="sd-card-text">Second, we want to compute the new period. In this case <span class="math notranslate nohighlight">\(B=\frac34\)</span>. Using <span class="math notranslate nohighlight">\(\frac{2\pi}{B}\)</span> the new period is:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \frac{2\pi}{\frac34} &amp; = \frac{4\cdot 2 \pi}{3}\\
+    &amp; = \frac{8\pi}{3}
+\end{align*}\]</div>
+<p class="sd-card-text">This means the graph of <span class="math notranslate nohighlight">\(y=\sin(\frac34 x)\)</span> over one period will be over the interval <span class="math notranslate nohighlight">\([0,\frac{8\pi}{3}]\)</span>. Next, we want to split the period interval into four equal length subintervals. To do this we first find</p>
+<div class="math notranslate nohighlight">
+\[\Delta x = \frac{P}{4} = \frac{\frac{8\pi}{3}}{4}=\frac{2\pi}{3}\]</div>
+<p class="sd-card-text">Since we are starting at <span class="math notranslate nohighlight">\(x_0=0\)</span>, we know that <span class="math notranslate nohighlight">\(x_1=x_0+1\Delta x\)</span>. Then we will do this up to <span class="math notranslate nohighlight">\(x_4\)</span>. That is,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x_0 &amp; = 0 + 0 \cdot (\frac{2\pi}{3})=\frac{0\pi}{3}\text{ or } 0\\
+    x_1 &amp; = 0 + 1 \cdot (\frac{2\pi}{3})=\frac{2\pi}{3}\\
+    x_2 &amp; = 0 + 2 \cdot (\frac{2\pi}{3})=\frac{4\pi}{3}\\
+    x_3 &amp; = 0 + 3 \cdot (\frac{2\pi}{3})=\frac{6\pi}{3}\text{ or } 2\pi\\
+    x_4 &amp; = 0 + 4 \cdot (\frac{2\pi}{3})=\frac{8\pi}{3}\\
+\end{align*}\]</div>
+<p class="sd-card-text">Next, evaluate <span class="math notranslate nohighlight">\(y=\sin(\frac34 x)\)</span> at <span class="math notranslate nohighlight">\(x_0\)</span>, <span class="math notranslate nohighlight">\(x_1\)</span>, <span class="math notranslate nohighlight">\(x_2\)</span>, <span class="math notranslate nohighlight">\(x_3\)</span>, and <span class="math notranslate nohighlight">\(x_4\)</span>.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p class="sd-card-text"></p></th>
+<th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x_i\)</span></p></th>
+<th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac34 x_i\)</span></p></th>
+<th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(y=\sin(\frac34 x_i)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x_0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x_1\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{2\pi}{3}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{\pi}{2}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x_2\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{4\pi}{3}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\pi\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x_3\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(2\pi\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{3\pi}{2}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x_4\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{8\pi}{3}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(2\pi\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p class="sd-card-text">From the table we then plot the following points:</p>
+<div class="math notranslate nohighlight">
+\[(0,0), (\frac{2\pi}{3},1),(\frac{4\pi}{3},0),(2\pi,-1),(\frac{8\pi}{3},0)\]</div>
+<p class="sd-card-text"><img alt="'Graph of y=sin(x) and y=sin(3 over 4 x) pointwise'" src="../_images/sinthreefourthsxGraphpointwise.png" /></p>
+<p class="sd-card-text">Next, complete the curve through the points for a plot of one period for the graph of <span class="math notranslate nohighlight">\(y=\sin(\frac34 x)\)</span>.</p>
+<p class="sd-card-text"><img alt="'Graph of y=sin(x) and y=sin(3 over 4 x) over one period'" src="../_images/sinthreefourthsxGraph.png" /></p>
+</div>
+</details></section>
+</div><div class="proof example admonition" id="sinthreefourthsxExam">
+<p class="admonition-title"><span class="caption-number">Example 27 </span></p>
+<section class="example-content" id="proof-content">
+<p>Plot <span class="math notranslate nohighlight">\(y=2\cos(3 x)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solution:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">First, we see that the amplitude is <span class="math notranslate nohighlight">\(2\)</span>.</p>
+<p class="sd-card-text">Second, we want to compute the new period. In this case <span class="math notranslate nohighlight">\(B=3\)</span>. Using <span class="math notranslate nohighlight">\(\frac{2\pi}{B}\)</span> the new period is:</p>
+<div class="math notranslate nohighlight">
+\[\frac{2\pi}{3}\]</div>
+<p class="sd-card-text">This means the graph of <span class="math notranslate nohighlight">\(y=2\cos(3 x)\)</span> over one period will be over the interval <span class="math notranslate nohighlight">\([0,\frac{2\pi}{3}]\)</span>. Next, we want to split the period interval into four equal length subintervals. To do this we first find</p>
+<div class="math notranslate nohighlight">
+\[\Delta x = \frac{P}{4} = \frac{\frac{2\pi}{3}}{4}=\frac{\pi}{6}\]</div>
+<p class="sd-card-text">Since we are starting at <span class="math notranslate nohighlight">\(x_0=0\)</span>, we now that <span class="math notranslate nohighlight">\(x_1=x_0+1\Delta x\)</span>. Then we will do this up to <span class="math notranslate nohighlight">\(x_4\)</span>. That is,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x_0 &amp; = 0 + 0 \cdot (\frac{\pi}{6})=\frac{0\pi}{6}\text{ or } 0\\
+    x_1 &amp; = 0 + 1 \cdot (\frac{\pi}{6})=\frac{\pi}{6}\\
+    x_2 &amp; = 0 + 2 \cdot (\frac{\pi}{6})=\frac{2\pi}{6}\text{ or } \frac{\pi}{3}\\
+    x_3 &amp; = 0 + 3 \cdot (\frac{\pi}{6})=\frac{3\pi}{6}\text{ or } \frac{\pi}{2}\\
+    x_4 &amp; = 0 + 4 \cdot (\frac{\pi}{6})=\frac{4\pi}{6}\text{ or } \frac{2\pi}{3}\\
+\end{align*}\]</div>
+<p class="sd-card-text">Next, evaluate <span class="math notranslate nohighlight">\(y=2\cos(3 x)\)</span> at <span class="math notranslate nohighlight">\(x_0\)</span>, <span class="math notranslate nohighlight">\(x_1\)</span>, <span class="math notranslate nohighlight">\(x_2\)</span>, <span class="math notranslate nohighlight">\(x_3\)</span>, and <span class="math notranslate nohighlight">\(x_4\)</span>.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p class="sd-card-text"></p></th>
+<th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x_i\)</span></p></th>
+<th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(3 x_i\)</span></p></th>
+<th class="head text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(y=2\cos(3 x_i)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x_0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x_1\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{\pi}{6}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{\pi}{2}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x_2\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{\pi}{3}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\pi\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(-2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x_3\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{\pi}{2}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{3\pi}{2}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x_4\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{2\pi}{3}\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(2\pi\)</span></p></td>
+<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(2\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p class="sd-card-text">From the table we then plot the following points:</p>
+<div class="math notranslate nohighlight">
+\[(0,2), (\frac{\pi}{6},0),(\frac{\pi}{3},-2),(\frac{\pi}{2},0),(\frac{2\pi}{3},2)\]</div>
+<p class="sd-card-text"><img alt="'Graph of y=cos(x) and y=2cos(3 x) pointwise'" src="../_images/costhreexGraphpointwise.png" /></p>
+<p class="sd-card-text">Next, complete the curve through the points for a plot of one period for the graph of <span class="math notranslate nohighlight">\(y=2\cos(3 x)\)</span>.</p>
+<p class="sd-card-text"><img alt="'Graph of y=cos(x) and y=2cos(3 x) over one period'" src="../_images/costhreexGraph.png" /></p>
+</div>
+</details></section>
+</div></section>
+<section id="graph-of-y-cos-x-and-y-sin-x-with-reflections">
+<h2>Graph of <span class="math notranslate nohighlight">\(y=\cos(x)\)</span> and <span class="math notranslate nohighlight">\(y=\sin(x)\)</span> with Reflections<a class="headerlink" href="#graph-of-y-cos-x-and-y-sin-x-with-reflections" title="Link to this heading"></a></h2>
+<p>Given the graph of <span class="math notranslate nohighlight">\(y=f(x)\)</span>. We know the graph of <span class="math notranslate nohighlight">\(y=-f(x)\)</span> is the graph of <span class="math notranslate nohighlight">\(y=f(x)\)</span> but reflected about the <span class="math notranslate nohighlight">\(x\)</span>-axis.</p>
+<p>Given the graph of <span class="math notranslate nohighlight">\(y=g(x)\)</span>. We know the graph of <span class="math notranslate nohighlight">\(y=g(-x)\)</span> is the graph of <span class="math notranslate nohighlight">\(y=g(x)\)</span> but reflected about the <span class="math notranslate nohighlight">\(y\)</span>-axis.</p>
+<p>For example: <span class="math notranslate nohighlight">\(y=-\cos(x)\)</span> where <span class="math notranslate nohighlight">\(x\in[0,2\pi]\)</span>.</p>
+<p><img alt="'Graph of y=cos(x) and y=-cos(x) where x is between zero and two pi'" src="../_images/negcosxGraph.png" /></p>
+<p>Another example: <span class="math notranslate nohighlight">\(y=\sin(-x)\)</span> where <span class="math notranslate nohighlight">\(x\in[-2\pi,2\pi]\)</span>. The solid blue line shows the reflection with respect to the gray dashed line.</p>
+<p><img alt="'Graph of y=sin(x) from zero to 2 pi dashed gray, y=sin(-x) from zero to 2 pi dashed blue, y=sin(-x) from negative 2 pi to zero solid blue line'" src="../_images/sinnegxGraph.png" /></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../chapter3/34.html" class="btn btn-neutral float-left" title="Section 3.4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="42.html" class="btn btn-neutral float-right" title="Section 4.2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Michael McCabe.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
